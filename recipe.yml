@@ -23,6 +23,12 @@ stages:
 
   # Put your custom actions below this comment
 
+  - name: install-nvidia
+    type: apt
+    source:
+      packages:
+      - build-essential
+
   - name: install-nvidia-driver
     type: shell
     commands:
