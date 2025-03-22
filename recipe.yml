@@ -29,6 +29,11 @@ stages:
       packages:
       - build-essential
 
+  - name: uname
+    type: shell
+    commands:
+      - uname -r
+
   - name: install-nvidia-driver
     type: shell
     commands:
