@@ -30,6 +30,12 @@ stages:
       - build-essential
       - linux-headers-generic
 
+  - name: check
+    type: shell
+    commands:
+      - ls -la /usr/local/src
+
+
   - name: install-nvidia-driver
     type: shell
     commands:
