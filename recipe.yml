@@ -33,7 +33,7 @@ stages:
     type: shell
     commands:
       - curl --output /tmp/nvidia.run https://uk.download.nvidia.com/XFree86/Linux-x86_64/570.124.04/NVIDIA-Linux-x86_64-570.124.04.run
-      - sh /tmp/nvidia.run -s
+      - sh /tmp/nvidia.run -a -s -Z -X
 
   # Put your custom actions above this comment
 
